@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fasilitas | Kampung Bahari Nusantara Sukawali</title>
+  <meta name="description" content="Fasilitas di Kampung Bahari Nusantara Sukawali, Tangerang" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kbn: {
+              50: '#f0f8ff',
+              100: '#d9eeff',
+              200: '#a3d9ff',
+              300: '#6fc3ff',
+              400: '#2ea4ff',
+              500: '#0078e6',
+              600: '#005db4',
+              700: '#004382',
+              800: '#002951',
+              900: '#00131f'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-kbn-50 to-white text-slate-800">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur shadow z-[9999]">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
+      <a href="index.html" class="text-kbn-700 font-bold text-lg hover:text-kbn-500 transition">
+        KBN Sukawali
+      </a>
+
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-slate-700 hover:text-kbn-600 transition">Home</a>
+        <a href="kegiatan.html" class="text-slate-700 hover:text-kbn-600 transition">Kegiatan</a>
+        <a href="fasilitas.html" class="text-kbn-600 font-semibold">Fasilitas</a>
+        <a href="#" class="text-slate-700 hover:text-kbn-600 transition">Artikel</a>
+      </nav>
+
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="md:hidden text-kbn-700">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden bg-white shadow-md md:hidden">
+      <nav class="flex flex-col space-y-2 px-6 py-4">
+        <a href="index.html#hero" class="text-slate-700 hover:text-kbn-600 transition">Home</a>
+        <a href="index.html#kegiatan" class="text-slate-700 hover:text-kbn-600 transition">Kegiatan</a>
+        <a href="fasilitas.html" class="text-kbn-600 font-semibold">Fasilitas</a>
+        <a href="index.html#artikel" class="text-slate-700 hover:text-kbn-600 transition">Artikel</a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- HERO / TITLE -->
+  <section class="pt-28 pb-12 text-center fade-in bg-gradient-to-b from-kbn-100 to-white">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-kbn-800 mb-4">Fasilitas Kampung Bahari Nusantara Sukawali</h1>
+    <p class="text-slate-600 max-w-2xl mx-auto">Beragam sarana penunjang kegiatan masyarakat dan pengunjung, dirancang untuk kenyamanan, edukasi, serta keberlanjutan lingkungan di kawasan pesisir Sukawali.</p>
+  </section>
+
+  <!-- FASILITAS -->
+  <section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6">
+    <div class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
+      <img src="img/fasilitas/toilet.jpg" alt="Toilet" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-kbn-700 mb-2">Toilet</h3>
+        <p class="text-slate-600">Tersedia toilet bersih untuk pengunjung dan peserta kegiatan KBN.</p>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
+      <img src="img/fasilitas/parkir.jpg" alt="Parkir" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-kbn-700 mb-2">Parkir</h3>
+        <p class="text-slate-600">Area parkir yang luas untuk kendaraan roda dua maupun empat.</p>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
+      <img src="img/fasilitas/rumah-pintar.jpg" alt="Rumah Pintar" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-kbn-700 mb-2">Rumah Pintar</h3>
+        <p class="text-slate-600">Pusat edukasi masyarakat dan anak-anak nelayan, lengkap dengan sarana belajar.</p>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
+      <img src="img/fasilitas/mushola.jpg" alt="Mushola" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-kbn-700 mb-2">Mushola</h3>
+        <p class="text-slate-600">Fasilitas ibadah yang bersih dan nyaman untuk pengunjung.</p>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
+      <img src="img/fasilitas/warung.jpg" alt="Warung" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-kbn-700 mb-2">Warung</h3>
+        <p class="text-slate-600">Warung warga sekitar yang menyediakan makanan dan minuman lokal.</p>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
+      <img src="img/fasilitas/sekretariat.jpg" alt="Sekretariat KBN" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-kbn-700 mb-2">Sekretariat KBN</h3>
+        <p class="text-slate-600">Pusat administrasi dan koordinasi kegiatan KBN Sukawali.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="bg-kbn-50 py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-kbn-700 mb-8">Galeri Fasilitas</h2>
+      <p class="text-slate-600 mb-8">Dokumentasi berbagai fasilitas di kawasan Kampung Bahari Nusantara Sukawali.</p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <img src="img/fasilitas/foto1.jpg" class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-90 transition">
+        <img src="img/fasilitas/foto2.jpg" class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-90 transition">
+        <img src="img/fasilitas/foto3.jpg" class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-90 transition">
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/6281234567890" target="_blank" 
+     class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition">
+    <i class="fab fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="bg-kbn-800 text-white py-6 text-center">
+    <p>&copy; 2025 Kampung Bahari Nusantara Sukawali. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
